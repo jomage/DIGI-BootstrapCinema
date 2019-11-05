@@ -126,7 +126,7 @@
                 </div>
                 <div class="modal-body">
                     <div class="container-fluid">
-                        <table class="table">
+                        <table class="table" id="tableReserv">
                             <thead>
                                 <tr>
                                     <th scope="col">Tarif</th>
@@ -136,6 +136,32 @@
                                     <th scope="col">Prix Total</th>
                                 </tr>
                             </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <select class="form-control" name="tarif" id="tarif">
+                                            <option value="enfant">-14 ans</option>
+                                            <option value="normal" selected>Plein pot</option>
+                                        </select>
+                                    </td>
+                                    <td>
+                                        <select class="form-control" name="seance" id="seance">
+                                                <option value="semaine">Lundi au Vendredi de 9h à 18h</option>
+                                                <option value="semaine">Lundi au Vendredi en soirée</option>
+                                                <option value="weekend">Weekend</option>
+                                        </select>
+                                    </td>
+                                    <td>
+                                        <input class="form-control" type="number" name="quantite" id="quantite" value="0" min="0" max="42">
+                                    </td>
+                                    <td>
+                                        <p id="prixUnit">--</p>
+                                    </td>
+                                    <td>
+                                        <p id="prixTotal">--</p>
+                                    </td>
+                                </tr>
+                            </tbody>
                         </table>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt ipsa, fuga pariatur animi
                         voluptate sunt quaerat vero laudantium tenetur placeat iste magni dolor adipisci est ad vel

@@ -123,6 +123,19 @@ td {
     max-width:250px;
     width:50%;
 }
+
+#reservModal .modal-content{
+    background-color:#fffd;
+}
+
+.modal-header {
+    background-color: #fff;
+    box-shadow: 0 0 15px #0004;
+}
+
+#tableReserv td {
+    background-color:#fbe6c7;
+}
 /** -------------- Section 3 INFOS PRATIQUES -------------- **/
 
 #infosPadding {
@@ -171,7 +184,7 @@ td {
     height:75vh;
 }
 
-#contact input, #contact textarea {
+.form-control, #contact input, #contact textarea, #tableReserv select {
     margin:0.3rem;
     padding:0.5rem;
     background-color:#fff7; /* #f0cb96; */
@@ -179,7 +192,7 @@ td {
     border:2px solid #f0cb96;
 }
 
-#contact input:focus, #contact textarea:focus, #formSubmit:focus {
+#contact input:focus, #contact textarea:focus, #formSubmit:focus, #tableReserv select:focus {
     box-shadow: 0 0 0 .2rem #ff000040;
 }
 #contact #formSubmit {
